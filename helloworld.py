@@ -11,12 +11,12 @@ def ping_router(num, ipaddr):
     start = time.time()
     while var1:
         time.sleep(2)
-        
         if os.system("ping -w 20 -n %s %s" % (num, ipaddr)) == 0:
             time_elapsed = time.time() - start
             myLock.acquire(True)
             print ("######### %s is up ##########" % ipaddr)
             print ("######### %s thread took" % ipaddr, time_elapsed, "seconds")
+            print ("#########################  END OF THREAD  ###################################")
             myLock.release()
         #elapsed_time = time.time() - start
         #print ("Time elapsed = ", elapsed_time, "\n######  Hit Enter to exit  ######\n" )
