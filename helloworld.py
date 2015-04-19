@@ -18,8 +18,8 @@ def ping_router(num, ipaddr):
             print ("######### %s thread took" % ipaddr, time_elapsed, "seconds")
             print ("#########################  END OF THREAD  ###################################")
             myLock.release()
-        elapsed_time = time.time() - start
-        print ("Time elapsed = ", elapsed_time, "\n######  Hit Enter to exit  ######\n" )
+        #elapsed_time = time.time() - start
+        #print ("Time elapsed = ", elapsed_time, "\n######  Hit Enter to exit  ######\n" )
 
 global var1
 var1 = True
