@@ -32,5 +32,5 @@ def ping_router(num, ipaddr):
 #thread1.start()
 #
 # METHOD - 2
-thread2 = threading.Thread( target = ping_router, kwargs=dict(num=5,ipaddr='8.8.4.4'))
-thread2.start()
+#thread2 = threading.Thread( target = ping_router, kwargs=dict(num=5,ipaddr='8.8.4.4'))
+#thread2.start()
